@@ -1,0 +1,21 @@
+# OSX Junk
+.DS_Store
+profile
+
+#intellij jun
+.idea
+
+# Xcode Junk
+**/xcuserdata/
+**/**/xcuserdata/
+build/
+*.model
+*.model1v3
+*.model2v3
+*.perspective
+*.perspectivev3
+*.pbxuser
+
+#Swap Files
+*~
+*.swp

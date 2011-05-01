@@ -1,0 +1,230 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EECC2973136D461100342AED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECC2972136D461100342AED /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EECC296F136D461100342AED /* libHashable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHashable.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EECC2972136D461100342AED /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		EECC2975136D461100342AED /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		EECC2976136D461100342AED /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EECC2977136D461100342AED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EECC297A136D461100342AED /* Hashable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hashable-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EECC296C136D461100342AED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EECC2973136D461100342AED /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EECC2964136D461100342AED = {
+			isa = PBXGroup;
+			children = (
+				EECC2978136D461100342AED /* Hashable */,
+				EECC2971136D461100342AED /* Frameworks */,
+				EECC2970136D461100342AED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EECC2970136D461100342AED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EECC296F136D461100342AED /* libHashable.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EECC2971136D461100342AED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EECC2972136D461100342AED /* Cocoa.framework */,
+				EECC2974136D461100342AED /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EECC2974136D461100342AED /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EECC2975136D461100342AED /* AppKit.framework */,
+				EECC2976136D461100342AED /* CoreData.framework */,
+				EECC2977136D461100342AED /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		EECC2978136D461100342AED /* Hashable */ = {
+			isa = PBXGroup;
+			children = (
+				EECC2979136D461100342AED /* Supporting Files */,
+			);
+			path = Hashable;
+			sourceTree = "<group>";
+		};
+		EECC2979136D461100342AED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EECC297A136D461100342AED /* Hashable-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EECC296D136D461100342AED /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EECC296E136D461100342AED /* Hashable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EECC297D136D461100342AED /* Build configuration list for PBXNativeTarget "Hashable" */;
+			buildPhases = (
+				EECC296B136D461100342AED /* Sources */,
+				EECC296C136D461100342AED /* Frameworks */,
+				EECC296D136D461100342AED /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hashable;
+			productName = Hashable;
+			productReference = EECC296F136D461100342AED /* libHashable.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EECC2966136D461100342AED /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = EECC2969136D461100342AED /* Build configuration list for PBXProject "Hashable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EECC2964136D461100342AED;
+			productRefGroup = EECC2970136D461100342AED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EECC296E136D461100342AED /* Hashable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EECC296B136D461100342AED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EECC297B136D461100342AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		EECC297C136D461100342AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		EECC297E136D461100342AED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hashable/Hashable-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EECC297F136D461100342AED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hashable/Hashable-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EECC2969136D461100342AED /* Build configuration list for PBXProject "Hashable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EECC297B136D461100342AED /* Debug */,
+				EECC297C136D461100342AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EECC297D136D461100342AED /* Build configuration list for PBXNativeTarget "Hashable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EECC297E136D461100342AED /* Debug */,
+				EECC297F136D461100342AED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EECC2966136D461100342AED /* Project object */;
+}
