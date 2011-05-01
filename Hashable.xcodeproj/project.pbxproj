@@ -7,10 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE3C7BBD136D4BCA008B749F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3C7BBC136D4BCA008B749F /* Foundation.framework */; };
+		EE3C7BC0136D4BCA008B749F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3C7BBF136D4BCA008B749F /* main.m */; };
+		EE3C7BD8136D5414008B749F /* ObjectSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3C7BD7136D5414008B749F /* ObjectSpec.m */; };
+		EE3C7BEF136D554C008B749F /* Cedar.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE3C7BEE136D554C008B749F /* Cedar.framework */; };
+		EE3C7BF0136D555C008B749F /* Cedar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3C7BEE136D554C008B749F /* Cedar.framework */; };
 		EECC2973136D461100342AED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECC2972136D461100342AED /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EE3C7BB8136D4BCA008B749F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		EE3C7BED136D5519008B749F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EE3C7BEF136D554C008B749F /* Cedar.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		EE3C7BBA136D4BCA008B749F /* Specs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Specs; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3C7BBC136D4BCA008B749F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EE3C7BBF136D4BCA008B749F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EE3C7BC2136D4BCA008B749F /* Specs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
+		EE3C7BD7136D5414008B749F /* ObjectSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectSpec.m; sourceTree = "<group>"; };
+		EE3C7BEE136D554C008B749F /* Cedar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cedar.framework; path = Libs/Cedar.framework; sourceTree = "<group>"; };
 		EECC296F136D461100342AED /* libHashable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHashable.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECC2972136D461100342AED /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		EECC2975136D461100342AED /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -20,6 +53,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		EE3C7BB7136D4BCA008B749F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3C7BBD136D4BCA008B749F /* Foundation.framework in Frameworks */,
+				EE3C7BF0136D555C008B749F /* Cedar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EECC296C136D461100342AED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -31,10 +73,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE3C7BBE136D4BCA008B749F /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				EE3C7BBF136D4BCA008B749F /* main.m */,
+				EE3C7BC1136D4BCA008B749F /* Supporting Files */,
+				EE3C7BD7136D5414008B749F /* ObjectSpec.m */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		EE3C7BC1136D4BCA008B749F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE3C7BC2136D4BCA008B749F /* Specs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		EECC2964136D461100342AED = {
 			isa = PBXGroup;
 			children = (
 				EECC2978136D461100342AED /* Hashable */,
+				EE3C7BBE136D4BCA008B749F /* Specs */,
 				EECC2971136D461100342AED /* Frameworks */,
 				EECC2970136D461100342AED /* Products */,
 			);
@@ -44,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				EECC296F136D461100342AED /* libHashable.a */,
+				EE3C7BBA136D4BCA008B749F /* Specs */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,7 +113,9 @@
 		EECC2971136D461100342AED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EE3C7BEE136D554C008B749F /* Cedar.framework */,
 				EECC2972136D461100342AED /* Cocoa.framework */,
+				EE3C7BBC136D4BCA008B749F /* Foundation.framework */,
 				EECC2974136D461100342AED /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -96,6 +160,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		EE3C7BB9136D4BCA008B749F /* Specs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE3C7BC6136D4BCA008B749F /* Build configuration list for PBXNativeTarget "Specs" */;
+			buildPhases = (
+				EE3C7BED136D5519008B749F /* CopyFiles */,
+				EE3C7BB6136D4BCA008B749F /* Sources */,
+				EE3C7BB7136D4BCA008B749F /* Frameworks */,
+				EE3C7BB8136D4BCA008B749F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Specs;
+			productName = Specs;
+			productReference = EE3C7BBA136D4BCA008B749F /* Specs */;
+			productType = "com.apple.product-type.tool";
+		};
 		EECC296E136D461100342AED /* Hashable */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EECC297D136D461100342AED /* Build configuration list for PBXNativeTarget "Hashable" */;
@@ -131,11 +213,21 @@
 			projectRoot = "";
 			targets = (
 				EECC296E136D461100342AED /* Hashable */,
+				EE3C7BB9136D4BCA008B749F /* Specs */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		EE3C7BB6136D4BCA008B749F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE3C7BC0136D4BCA008B749F /* main.m in Sources */,
+				EE3C7BD8136D5414008B749F /* ObjectSpec.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		EECC296B136D461100342AED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -146,6 +238,40 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		EE3C7BC4136D4BCA008B749F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libs\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EE3C7BC5136D4BCA008B749F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/Libs\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		EECC297B136D461100342AED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -207,6 +333,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		EE3C7BC6136D4BCA008B749F /* Build configuration list for PBXNativeTarget "Specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE3C7BC4136D4BCA008B749F /* Debug */,
+				EE3C7BC5136D4BCA008B749F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		EECC2969136D461100342AED /* Build configuration list for PBXProject "Hashable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -223,6 +357,7 @@
 				EECC297F136D461100342AED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
