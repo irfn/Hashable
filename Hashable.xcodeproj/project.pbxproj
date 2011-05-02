@@ -26,14 +26,14 @@
 		EE68A831136EC3C40093E6FD /* NSString+Inflections.h in Headers */ = {isa = PBXBuildFile; fileRef = EE68A82F136EC3C40093E6FD /* NSString+Inflections.h */; };
 		EE68A832136EC3C40093E6FD /* NSString+Inflections.m in Sources */ = {isa = PBXBuildFile; fileRef = EE68A830136EC3C40093E6FD /* NSString+Inflections.m */; };
 		EE68A833136EC3C40093E6FD /* NSString+Inflections.m in Sources */ = {isa = PBXBuildFile; fileRef = EE68A830136EC3C40093E6FD /* NSString+Inflections.m */; };
-		EE68A845136EDA510093E6FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3C7BBC136D4BCA008B749F /* Foundation.framework */; };
-		EE68A84C136EDA710093E6FD /* NSString+Inflections.m in Sources */ = {isa = PBXBuildFile; fileRef = EE68A830136EC3C40093E6FD /* NSString+Inflections.m */; };
-		EE68A84D136EDA710093E6FD /* NSObject+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3C7C01136D97D0008B749F /* NSObject+Properties.m */; };
-		EE68A84E136EDA710093E6FD /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = EE353850136E829700F0F46B /* RegexKitLite.m */; };
-		EE68A84F136EDA810093E6FD /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE353861136E830000F0F46B /* libicucore.A.dylib */; };
-		EE68A850136EDA960093E6FD /* NSObject+Properties.h in Headers */ = {isa = PBXBuildFile; fileRef = EE3C7C00136D97D0008B749F /* NSObject+Properties.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE68A851136EDAAB0093E6FD /* NSString+Inflections.h in Headers */ = {isa = PBXBuildFile; fileRef = EE68A82F136EC3C40093E6FD /* NSString+Inflections.h */; };
 		EECC2973136D461100342AED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECC2972136D461100342AED /* Cocoa.framework */; };
+		EEED763C136EDDBF00FA1B24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3C7BBC136D4BCA008B749F /* Foundation.framework */; };
+		EEED7643136EDDD000FA1B24 /* NSString+Inflections.m in Sources */ = {isa = PBXBuildFile; fileRef = EE68A830136EC3C40093E6FD /* NSString+Inflections.m */; };
+		EEED7644136EDDD000FA1B24 /* NSObject+Properties.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3C7C01136D97D0008B749F /* NSObject+Properties.m */; };
+		EEED7645136EDDD000FA1B24 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = EE353850136E829700F0F46B /* RegexKitLite.m */; };
+		EEED7646136EDDE100FA1B24 /* NSObject+Properties.m in Headers */ = {isa = PBXBuildFile; fileRef = EE3C7C01136D97D0008B749F /* NSObject+Properties.m */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEED7647136EDDE500FA1B24 /* NSString+Inflections.h in Headers */ = {isa = PBXBuildFile; fileRef = EE68A82F136EC3C40093E6FD /* NSString+Inflections.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEED7648136EDDEE00FA1B24 /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE353861136E830000F0F46B /* libicucore.A.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -81,14 +81,14 @@
 		EE3C7C01136D97D0008B749F /* NSObject+Properties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Properties.m"; sourceTree = "<group>"; };
 		EE68A82F136EC3C40093E6FD /* NSString+Inflections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Inflections.h"; path = "Libs/Inflections/NSString+Inflections.h"; sourceTree = SOURCE_ROOT; };
 		EE68A830136EC3C40093E6FD /* NSString+Inflections.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Inflections.m"; path = "Libs/Inflections/NSString+Inflections.m"; sourceTree = SOURCE_ROOT; };
-		EE68A844136EDA510093E6FD /* libHashable-iPhone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libHashable-iPhone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE68A848136EDA510093E6FD /* Hashable-iPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hashable-iPhone-Prefix.pch"; sourceTree = "<group>"; };
 		EECC296F136D461100342AED /* libHashable.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHashable.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EECC2972136D461100342AED /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		EECC2975136D461100342AED /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		EECC2976136D461100342AED /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		EECC2977136D461100342AED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EECC297A136D461100342AED /* Hashable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hashable-Prefix.pch"; sourceTree = "<group>"; };
+		EEED763B136EDDBF00FA1B24 /* libHashable-iPhone.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libHashable-iPhone.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEED763F136EDDBF00FA1B24 /* Hashable-iPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hashable-iPhone-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,21 +103,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE68A841136EDA510093E6FD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE68A84F136EDA810093E6FD /* libicucore.A.dylib in Frameworks */,
-				EE68A845136EDA510093E6FD /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EECC296C136D461100342AED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EE353862136E830000F0F46B /* libicucore.A.dylib in Frameworks */,
 				EECC2973136D461100342AED /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEED7638136EDDBF00FA1B24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEED763C136EDDBF00FA1B24 /* Foundation.framework in Frameworks */,
+				EEED7648136EDDEE00FA1B24 /* libicucore.A.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,28 +159,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		EE68A846136EDA510093E6FD /* Hashable-iPhone */ = {
-			isa = PBXGroup;
-			children = (
-				EE68A847136EDA510093E6FD /* Supporting Files */,
-			);
-			path = "Hashable-iPhone";
-			sourceTree = "<group>";
-		};
-		EE68A847136EDA510093E6FD /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				EE68A848136EDA510093E6FD /* Hashable-iPhone-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		EECC2964136D461100342AED = {
 			isa = PBXGroup;
 			children = (
 				EECC2978136D461100342AED /* Hashable */,
 				EE3C7BBE136D4BCA008B749F /* Specs */,
-				EE68A846136EDA510093E6FD /* Hashable-iPhone */,
+				EEED763D136EDDBF00FA1B24 /* Hashable-iPhone */,
 				EECC2971136D461100342AED /* Frameworks */,
 				EECC2970136D461100342AED /* Products */,
 			);
@@ -191,7 +175,7 @@
 			children = (
 				EECC296F136D461100342AED /* libHashable.a */,
 				EE3C7BBA136D4BCA008B749F /* Specs */,
-				EE68A844136EDA510093E6FD /* libHashable-iPhone.a */,
+				EEED763B136EDDBF00FA1B24 /* libHashable-iPhone.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -240,24 +224,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EEED763D136EDDBF00FA1B24 /* Hashable-iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				EEED763E136EDDBF00FA1B24 /* Supporting Files */,
+			);
+			path = "Hashable-iPhone";
+			sourceTree = "<group>";
+		};
+		EEED763E136EDDBF00FA1B24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EEED763F136EDDBF00FA1B24 /* Hashable-iPhone-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		EE68A842136EDA510093E6FD /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE68A850136EDA960093E6FD /* NSObject+Properties.h in Headers */,
-				EE68A851136EDAAB0093E6FD /* NSString+Inflections.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EECC296D136D461100342AED /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				EE3C7C02136D97D0008B749F /* NSObject+Properties.h in Headers */,
 				EE68A831136EC3C40093E6FD /* NSString+Inflections.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEED7639136EDDBF00FA1B24 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEED7646136EDDE100FA1B24 /* NSObject+Properties.m in Headers */,
+				EEED7647136EDDE500FA1B24 /* NSString+Inflections.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,23 +282,6 @@
 			productReference = EE3C7BBA136D4BCA008B749F /* Specs */;
 			productType = "com.apple.product-type.tool";
 		};
-		EE68A843136EDA510093E6FD /* Hashable-iPhone */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = EE68A849136EDA510093E6FD /* Build configuration list for PBXNativeTarget "Hashable-iPhone" */;
-			buildPhases = (
-				EE68A840136EDA510093E6FD /* Sources */,
-				EE68A841136EDA510093E6FD /* Frameworks */,
-				EE68A842136EDA510093E6FD /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Hashable-iPhone";
-			productName = "Hashable-iPhone";
-			productReference = EE68A844136EDA510093E6FD /* libHashable-iPhone.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		EECC296E136D461100342AED /* Hashable */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = EECC297D136D461100342AED /* Build configuration list for PBXNativeTarget "Hashable" */;
@@ -314,6 +297,23 @@
 			name = Hashable;
 			productName = Hashable;
 			productReference = EECC296F136D461100342AED /* libHashable.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EEED763A136EDDBF00FA1B24 /* Hashable-iPhone */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEED7640136EDDBF00FA1B24 /* Build configuration list for PBXNativeTarget "Hashable-iPhone" */;
+			buildPhases = (
+				EEED7637136EDDBF00FA1B24 /* Sources */,
+				EEED7638136EDDBF00FA1B24 /* Frameworks */,
+				EEED7639136EDDBF00FA1B24 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hashable-iPhone";
+			productName = "Hashable-iPhone";
+			productReference = EEED763B136EDDBF00FA1B24 /* libHashable-iPhone.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -335,7 +335,7 @@
 			targets = (
 				EECC296E136D461100342AED /* Hashable */,
 				EE3C7BB9136D4BCA008B749F /* Specs */,
-				EE68A843136EDA510093E6FD /* Hashable-iPhone */,
+				EEED763A136EDDBF00FA1B24 /* Hashable-iPhone */,
 			);
 		};
 /* End PBXProject section */
@@ -355,16 +355,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE68A840136EDA510093E6FD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EE68A84C136EDA710093E6FD /* NSString+Inflections.m in Sources */,
-				EE68A84D136EDA710093E6FD /* NSObject+Properties.m in Sources */,
-				EE68A84E136EDA710093E6FD /* RegexKitLite.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EECC296B136D461100342AED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,6 +362,16 @@
 				EE3C7C03136D97D0008B749F /* NSObject+Properties.m in Sources */,
 				EE35385F136E829700F0F46B /* RegexKitLite.m in Sources */,
 				EE68A832136EC3C40093E6FD /* NSString+Inflections.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EEED7637136EDDBF00FA1B24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEED7643136EDDD000FA1B24 /* NSString+Inflections.m in Sources */,
+				EEED7644136EDDD000FA1B24 /* NSObject+Properties.m in Sources */,
+				EEED7645136EDDD000FA1B24 /* RegexKitLite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,38 +409,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Specs/Specs-Prefix.pch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		EE68A84A136EDA510093E6FD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				DSTROOT = /tmp/Hashable_iPhone.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Hashable-iPhone/Hashable-iPhone-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		EE68A84B136EDA510093E6FD /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				DSTROOT = /tmp/Hashable_iPhone.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Hashable-iPhone/Hashable-iPhone-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -502,6 +470,38 @@
 			};
 			name = Release;
 		};
+		EEED7641136EDDBF00FA1B24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/Hashable_iPhone.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hashable-iPhone/Hashable-iPhone-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EEED7642136EDDBF00FA1B24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				DSTROOT = /tmp/Hashable_iPhone.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Hashable-iPhone/Hashable-iPhone-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -513,14 +513,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		EE68A849136EDA510093E6FD /* Build configuration list for PBXNativeTarget "Hashable-iPhone" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EE68A84A136EDA510093E6FD /* Debug */,
-				EE68A84B136EDA510093E6FD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 		EECC2969136D461100342AED /* Build configuration list for PBXProject "Hashable" */ = {
 			isa = XCConfigurationList;
@@ -539,6 +531,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		EEED7640136EDDBF00FA1B24 /* Build configuration list for PBXNativeTarget "Hashable-iPhone" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEED7641136EDDBF00FA1B24 /* Debug */,
+				EEED7642136EDDBF00FA1B24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

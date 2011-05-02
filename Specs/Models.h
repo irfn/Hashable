@@ -10,7 +10,7 @@
 @end
 
 @interface Bar : NSObject {
-  Baz* bar;
+  Baz* baz;
 	NSString* barData;
 }
 @property(readwrite, nonatomic, retain) Baz *baz;

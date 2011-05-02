@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Hashable-iPhone' target in the 'Hashable-iPhone' project
+//
+
+#ifdef __OBJC__
+  #import <Foundation/Foundation.h>
+#endif
