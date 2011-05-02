@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EE35382F136E707400F0F46B /* Models.h in Headers */ = {isa = PBXBuildFile; fileRef = EE35382E136E707400F0F46B /* Models.h */; };
 		EE353832136E727900F0F46B /* Cedar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3C7BEE136D554C008B749F /* Cedar.framework */; };
 		EE353841136E793A00F0F46B /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE35383F136E792E00F0F46B /* OCHamcrest.framework */; };
 		EE353842136E794300F0F46B /* OCHamcrest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE35383F136E792E00F0F46B /* OCHamcrest.framework */; };
-		EE35385E136E829700F0F46B /* RegexKitLite.h in Headers */ = {isa = PBXBuildFile; fileRef = EE35384E136E829700F0F46B /* RegexKitLite.h */; };
 		EE35385F136E829700F0F46B /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = EE353850136E829700F0F46B /* RegexKitLite.m */; };
 		EE353860136E829700F0F46B /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = EE353850136E829700F0F46B /* RegexKitLite.m */; };
 		EE353862136E830000F0F46B /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE353861136E830000F0F46B /* libicucore.A.dylib */; };
@@ -217,8 +215,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE3C7C02136D97D0008B749F /* NSObject+Properties.h in Headers */,
-				EE35382F136E707400F0F46B /* Models.h in Headers */,
-				EE35385E136E829700F0F46B /* RegexKitLite.h in Headers */,
 				EE353866136E83B600F0F46B /* NSString+Conversions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
