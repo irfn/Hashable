@@ -3,9 +3,7 @@
 
 int main (int argc, const char *argv[]) {
 	
-	NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 	int status = runAllSpecs();
-  [pool release];
   
   return status;
 }        
