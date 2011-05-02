@@ -10,7 +10,7 @@ describe(@"Object toDictionary", ^{
   
   it(@"should translate object properties to key values", ^{
     Foo *foo = [Factory createFoo];
-    NSDictionary *properties =  [foo propertiesDictionary];
+    NSDictionary *properties =  [foo toDictionary];
     assertThat([properties valueForKey:@"fooData1"], equalTo(foo.fooData1));
     assertThat([properties valueForKey:@"fooData2"], equalTo(foo.fooData2));
     assertThat([properties valueForKey:@"fooData3"], equalTo(foo.fooData3));
@@ -22,7 +22,7 @@ describe(@"Object toDictionary", ^{
 	
   it(@"should translate key values to object", ^{
     Foo *initialFoo = [Factory createFoo];
-    NSDictionary *properties =  [initialFoo propertiesDictionary];
+    NSDictionary *properties =  [initialFoo toDictionary];
     
     Foo *foo = [[Foo alloc] fromDictionary:properties];
     assertThat(foo.fooData1, equalTo([properties valueForKey:@"fooData1"]));

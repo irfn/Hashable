@@ -14,12 +14,12 @@
 	return propertyKeys;
 }
 
--(NSDictionary*) propertiesDictionary{
+-(NSDictionary*) toDictionary{
 	NSMutableDictionary *properties = [[NSMutableDictionary alloc] init];
 	for (NSString *key in  [self propertyNames]) {
 		id valueForKey = [self valueForKey:key];
 		if([[valueForKey propertyNames] count] > 0)
-			[properties setValue:[valueForKey propertiesDictionary] forKey:key];
+			[properties setValue:[valueForKey toDictionary] forKey:key];
 		else
 			[properties setValue:valueForKey forKey:key];
 	}

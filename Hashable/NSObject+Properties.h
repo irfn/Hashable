@@ -4,6 +4,6 @@
 
 @interface NSObject(Properties)
 -(NSArray*) propertyNames;
--(NSDictionary*) propertiesDictionary;
+-(NSDictionary*) toDictionary;
 -(id) fromDictionary:(NSDictionary*) dictionary;
 @end
