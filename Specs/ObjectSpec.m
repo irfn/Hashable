@@ -47,12 +47,27 @@ describe(@"Object toDictionary", ^{
 	
   it(@"should tranlate dictionary with underscrored keys to object", ^{
     NSDictionary *properties =  [[Factory createFoo] toDictionary:TRUE];
-//    NSLog(@"%@", properties);
     Foo *foo = [[Foo alloc] fromDictionary:properties withKeysUnderscored:TRUE];
     assertThat(foo.fooData1, equalTo([properties valueForKey:@"foo_data1"]));        
   });
 	
-  
+  it(@"should tranlate to a dictionary with nested array of objects", ^{
+    Foo *foo  = [Factory createFoo]; 
+    NSDictionary *properties =  [foo toDictionary:TRUE];
+    assertThatBool([[[properties valueForKey:@"bars"] class] isSubclassOfClass:[NSArray class]], equalToBool(YES));
+    NSDictionary *barProperties = (NSDictionary *)[((NSArray*) [properties valueForKey:@"bars"] ) objectAtIndex:0];
+    
+    assertThat(((Bar*)[foo.bars objectAtIndex:0]).barData, equalTo([barProperties valueForKey:@"bar_data"]));        
+  });	  
+
+  it(@"should tranlate from a nested array of dictionary", ^{
+    NSDictionary *properties =  [ [Factory createFoo] toDictionary:TRUE];
+    Foo *foo  = [[Foo alloc] fromDictionary:properties withKeysUnderscored:TRUE];
+
+    NSDictionary *barProperties = (NSDictionary *)[((NSArray*) [properties valueForKey:@"bars"] ) objectAtIndex:0];
+    
+    assertThat([barProperties valueForKey:@"bar_data"], equalTo(((Bar*)[foo.bars objectAtIndex:0]).barData));        
+  });	  
 
 });
 

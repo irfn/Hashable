@@ -25,9 +25,11 @@
   NSString* fooData2;
   NSString* fooData3;
 	Bar* bar;
+  NSArray* bars;
 }
 
 @property(readwrite, nonatomic, retain) NSString *fooData1, *fooData2, *fooData3;
 @property(readwrite, nonatomic) BOOL aBooleanData;
 @property(readwrite, nonatomic, retain) Bar *bar;
+@property(readwrite, nonatomic, retain) NSArray *bars;
 @end

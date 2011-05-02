@@ -1,5 +1,5 @@
 #import "NSObject+Properties.h"
-#import "NSString+Conversions.h"
+#import "NSString+Inflections.h"
 
 @implementation NSObject(Properties)
 
@@ -18,9 +18,17 @@
 	NSMutableDictionary *properties = [[NSMutableDictionary alloc] init];
 	for (NSString *key in  [self propertyNames]) {
 		id valueForKey = [self valueForKey:key];
-    NSString *dictionaryKey = underscoredKeys ? [key asUnderscored] : key;
-		if([[valueForKey propertyNames] count] > 0)
-			[properties setValue:[valueForKey toDictionary:underscoredKeys] forKey:dictionaryKey];
+    NSString *dictionaryKey = underscoredKeys ? [key underscore] : key;
+    if([valueForKey isKindOfClass:[NSArray class]]){
+      NSArray *nestedElements = (NSArray *) valueForKey;
+      NSMutableArray *convertedArray = [[NSMutableArray alloc] init];
+      for (id element in nestedElements) {
+        [convertedArray addObject:[element toDictionary:underscoredKeys ]];
+      }
+      [properties setValue:convertedArray forKey:dictionaryKey];      
+    }      
+    else if([[valueForKey propertyNames] count] > 0)
+			[properties setValue:[valueForKey toDictionary:underscoredKeys] forKey:dictionaryKey];      
 		else
 			[properties setValue:valueForKey forKey:dictionaryKey];
 	}
@@ -38,10 +46,19 @@
 
 -(id) fromDictionary:(NSDictionary *)properties withKeysUnderscored:(BOOL)underscoredKeys{
   for (NSString *key in  [self propertyNames]) {
-    NSString *propertyKey = underscoredKeys ? [key asUnderscored] : key;
+    NSString *propertyKey = underscoredKeys ? [key underscore] : key;
 		id valueForKey = [properties valueForKey:propertyKey];
     
-		if([[valueForKey class]  isSubclassOfClass:[NSDictionary class]]){
+    if([valueForKey isKindOfClass:[NSArray class]]){
+      NSArray *nestedElements = (NSArray *) valueForKey;
+      NSMutableArray *convertedArray = [[NSMutableArray alloc] init];
+      for (id element in nestedElements) {
+        id objectFromDictionary = [[NSClassFromString([[key singularize] classify]) alloc] fromDictionary:element withKeysUnderscored:underscoredKeys];
+        [convertedArray addObject: objectFromDictionary];
+      }
+      [self setValue:convertedArray forKey:key];
+    }
+		else if([[valueForKey class]  isSubclassOfClass:[NSDictionary class]]){
 			[self setValue: [[[self getPropertyClass:key] alloc] fromDictionary:valueForKey withKeysUnderscored:underscoredKeys] forKey:key ];
 		}
 		else      

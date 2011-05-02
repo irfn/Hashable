@@ -9,5 +9,5 @@
 @end
 
 @implementation Foo
-@synthesize bar, aBooleanData, fooData1, fooData2, fooData3;
+@synthesize bar, bars, aBooleanData, fooData1, fooData2, fooData3;
 @end
