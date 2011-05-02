@@ -1,5 +1,5 @@
 #import "NSObject+Properties.h"
-
+#import "NSString+Conversions.h"
 
 @implementation NSObject(Properties)
 
@@ -14,34 +14,46 @@
 	return propertyKeys;
 }
 
--(NSDictionary*) toDictionary{
+-(NSDictionary*) toDictionary:(BOOL) underscoredKeys{
 	NSMutableDictionary *properties = [[NSMutableDictionary alloc] init];
 	for (NSString *key in  [self propertyNames]) {
 		id valueForKey = [self valueForKey:key];
+    NSString *dictionaryKey = underscoredKeys ? [key asUnderscored] : key;
 		if([[valueForKey propertyNames] count] > 0)
-			[properties setValue:[valueForKey toDictionary] forKey:key];
+			[properties setValue:[valueForKey toDictionary:underscoredKeys] forKey:dictionaryKey];
 		else
-			[properties setValue:valueForKey forKey:key];
+			[properties setValue:valueForKey forKey:dictionaryKey];
 	}
 	return properties;
 }
+
+-(NSDictionary*) toDictionary{
+  return [self toDictionary:FALSE];
+}
+
 - (Class) getPropertyClass:(NSString*) key {
 	objc_property_t property = class_getProperty([self class], [key UTF8String] );
 	return NSClassFromString([[[NSString stringWithUTF8String:property_getAttributes(property)] componentsSeparatedByString:@"\""] objectAtIndex:1]);
 }
 
--(id) fromDictionary:(NSDictionary*) properties{
-	for (NSString *key in  [self propertyNames]) {
-		id valueForKey = [properties valueForKey:key];
+-(id) fromDictionary:(NSDictionary *)properties withKeysUnderscored:(BOOL)underscoredKeys{
+  for (NSString *key in  [self propertyNames]) {
+    NSString *propertyKey = underscoredKeys ? [key asUnderscored] : key;
+		id valueForKey = [properties valueForKey:propertyKey];
+    
 		if([[valueForKey class]  isSubclassOfClass:[NSDictionary class]]){
-			[self setValue: [[[self getPropertyClass:key] alloc] fromDictionary:valueForKey] forKey:key ];
+			[self setValue: [[[self getPropertyClass:key] alloc] fromDictionary:valueForKey withKeysUnderscored:underscoredKeys] forKey:key ];
 		}
-		else
+		else      
 		{
 			[self setValue:valueForKey forKey:key];
 		}								
 	}
 	return self;	
+}
+
+-(id) fromDictionary:(NSDictionary*) properties{
+	return [self fromDictionary:properties withKeysUnderscored:FALSE];
 }
 
 @end

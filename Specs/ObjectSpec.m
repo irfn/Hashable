@@ -11,6 +11,8 @@ describe(@"Object toDictionary", ^{
   it(@"should translate object properties to key values", ^{
     Foo *foo = [Factory createFoo];
     NSDictionary *properties =  [foo toDictionary];
+    
+
     assertThat([properties valueForKey:@"fooData1"], equalTo(foo.fooData1));
     assertThat([properties valueForKey:@"fooData2"], equalTo(foo.fooData2));
     assertThat([properties valueForKey:@"fooData3"], equalTo(foo.fooData3));
@@ -33,7 +35,24 @@ describe(@"Object toDictionary", ^{
     assertThat(foo.bar.baz.bazData2, equalTo([[[properties valueForKey:@"bar"] valueForKey:@"baz"] valueForKey:@"bazData2"]));
     assertThat(foo.bar.baz.bazData3, equalTo([[[properties valueForKey:@"bar"] valueForKey:@"baz"] valueForKey:@"bazData3"]));
   });
+  
+  it(@"should tranlate to underscrored keys", ^{
+    Foo *foo = [Factory createFoo];
+    NSDictionary *properties =  [foo toDictionary:TRUE];
+    assertThat(foo.fooData1, equalTo([properties valueForKey:@"foo_data1"]));        
+    assertThat(foo.bar.barData, equalTo([[properties valueForKey:@"bar"] valueForKey:@"bar_data"]));
+    assertThat(foo.bar.baz.bazData3, equalTo([[[properties valueForKey:@"bar"] valueForKey:@"baz"] valueForKey:@"baz_data3"]));
+
+  });
 	
+  it(@"should tranlate dictionary with underscrored keys to object", ^{
+    NSDictionary *properties =  [[Factory createFoo] toDictionary:TRUE];
+//    NSLog(@"%@", properties);
+    Foo *foo = [[Foo alloc] fromDictionary:properties withKeysUnderscored:TRUE];
+    assertThat(foo.fooData1, equalTo([properties valueForKey:@"foo_data1"]));        
+  });
+	
+  
 
 });
 

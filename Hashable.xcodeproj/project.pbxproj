@@ -11,6 +11,15 @@
 		EE353832136E727900F0F46B /* Cedar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3C7BEE136D554C008B749F /* Cedar.framework */; };
 		EE353841136E793A00F0F46B /* OCHamcrest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE35383F136E792E00F0F46B /* OCHamcrest.framework */; };
 		EE353842136E794300F0F46B /* OCHamcrest.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EE35383F136E792E00F0F46B /* OCHamcrest.framework */; };
+		EE35385E136E829700F0F46B /* RegexKitLite.h in Headers */ = {isa = PBXBuildFile; fileRef = EE35384E136E829700F0F46B /* RegexKitLite.h */; };
+		EE35385F136E829700F0F46B /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = EE353850136E829700F0F46B /* RegexKitLite.m */; };
+		EE353860136E829700F0F46B /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = EE353850136E829700F0F46B /* RegexKitLite.m */; };
+		EE353862136E830000F0F46B /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE353861136E830000F0F46B /* libicucore.A.dylib */; };
+		EE353863136E831500F0F46B /* libicucore.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EE353861136E830000F0F46B /* libicucore.A.dylib */; };
+		EE353866136E83B600F0F46B /* NSString+Conversions.h in Headers */ = {isa = PBXBuildFile; fileRef = EE353864136E83B600F0F46B /* NSString+Conversions.h */; };
+		EE353867136E83B600F0F46B /* NSString+Conversions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE353865136E83B600F0F46B /* NSString+Conversions.m */; };
+		EE353868136E83B600F0F46B /* NSString+Conversions.m in Sources */ = {isa = PBXBuildFile; fileRef = EE353865136E83B600F0F46B /* NSString+Conversions.m */; };
+		EE35386B136E84B500F0F46B /* NSStringSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = EE353869136E84A300F0F46B /* NSStringSpec.m */; };
 		EE3C7BBD136D4BCA008B749F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE3C7BBC136D4BCA008B749F /* Foundation.framework */; };
 		EE3C7BC0136D4BCA008B749F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3C7BBF136D4BCA008B749F /* main.m */; };
 		EE3C7BD8136D5414008B749F /* ObjectSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3C7BD7136D5414008B749F /* ObjectSpec.m */; };
@@ -50,6 +59,15 @@
 		EE35382E136E707400F0F46B /* Models.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
 		EE353831136E722100F0F46B /* Factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Factory.h; sourceTree = "<group>"; };
 		EE35383F136E792E00F0F46B /* OCHamcrest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrest.framework; path = Libs/OCHamcrest.framework; sourceTree = "<group>"; };
+		EE35384C136E829700F0F46B /* License.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = License.html; sourceTree = "<group>"; };
+		EE35384D136E829700F0F46B /* License.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = License.rtf; sourceTree = "<group>"; };
+		EE35384E136E829700F0F46B /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		EE35384F136E829700F0F46B /* RegexKitLite.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = RegexKitLite.html; sourceTree = "<group>"; };
+		EE353850136E829700F0F46B /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		EE353861136E830000F0F46B /* libicucore.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.A.dylib; path = usr/lib/libicucore.A.dylib; sourceTree = SDKROOT; };
+		EE353864136E83B600F0F46B /* NSString+Conversions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Conversions.h"; sourceTree = "<group>"; };
+		EE353865136E83B600F0F46B /* NSString+Conversions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Conversions.m"; sourceTree = "<group>"; };
+		EE353869136E84A300F0F46B /* NSStringSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringSpec.m; sourceTree = "<group>"; };
 		EE3C7BBA136D4BCA008B749F /* Specs */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Specs; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3C7BBC136D4BCA008B749F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EE3C7BBF136D4BCA008B749F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE353863136E831500F0F46B /* libicucore.A.dylib in Frameworks */,
 				EE3C7BBD136D4BCA008B749F /* Foundation.framework in Frameworks */,
 				EE353832136E727900F0F46B /* Cedar.framework in Frameworks */,
 				EE353841136E793A00F0F46B /* OCHamcrest.framework in Frameworks */,
@@ -83,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE353862136E830000F0F46B /* libicucore.A.dylib in Frameworks */,
 				EECC2973136D461100342AED /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,6 +110,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE353843136E829700F0F46B /* RegexKitLite-4.0 */ = {
+			isa = PBXGroup;
+			children = (
+				EE35384C136E829700F0F46B /* License.html */,
+				EE35384D136E829700F0F46B /* License.rtf */,
+				EE35384E136E829700F0F46B /* RegexKitLite.h */,
+				EE35384F136E829700F0F46B /* RegexKitLite.html */,
+				EE353850136E829700F0F46B /* RegexKitLite.m */,
+			);
+			name = "RegexKitLite-4.0";
+			path = "Libs/RegexKitLite-4.0";
+			sourceTree = "<group>";
+		};
 		EE3C7BBE136D4BCA008B749F /* Specs */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +133,7 @@
 				EE3C7BFE136D969E008B749F /* Factory.m */,
 				EE35382E136E707400F0F46B /* Models.h */,
 				EE353831136E722100F0F46B /* Factory.h */,
+				EE353869136E84A300F0F46B /* NSStringSpec.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -134,6 +168,8 @@
 		EECC2971136D461100342AED /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EE353861136E830000F0F46B /* libicucore.A.dylib */,
+				EE353843136E829700F0F46B /* RegexKitLite-4.0 */,
 				EE35383F136E792E00F0F46B /* OCHamcrest.framework */,
 				EE3C7BEE136D554C008B749F /* Cedar.framework */,
 				EECC2972136D461100342AED /* Cocoa.framework */,
@@ -159,6 +195,8 @@
 				EE3C7C00136D97D0008B749F /* NSObject+Properties.h */,
 				EE3C7C01136D97D0008B749F /* NSObject+Properties.m */,
 				EECC2979136D461100342AED /* Supporting Files */,
+				EE353864136E83B600F0F46B /* NSString+Conversions.h */,
+				EE353865136E83B600F0F46B /* NSString+Conversions.m */,
 			);
 			path = Hashable;
 			sourceTree = "<group>";
@@ -180,6 +218,8 @@
 			files = (
 				EE3C7C02136D97D0008B749F /* NSObject+Properties.h in Headers */,
 				EE35382F136E707400F0F46B /* Models.h in Headers */,
+				EE35385E136E829700F0F46B /* RegexKitLite.h in Headers */,
+				EE353866136E83B600F0F46B /* NSString+Conversions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,6 +294,9 @@
 				EE3C7BFC136D9381008B749F /* Models.m in Sources */,
 				EE3C7C04136D97D0008B749F /* NSObject+Properties.m in Sources */,
 				EE3C7BD8136D5414008B749F /* ObjectSpec.m in Sources */,
+				EE353860136E829700F0F46B /* RegexKitLite.m in Sources */,
+				EE353868136E83B600F0F46B /* NSString+Conversions.m in Sources */,
+				EE35386B136E84B500F0F46B /* NSStringSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +305,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE3C7C03136D97D0008B749F /* NSObject+Properties.m in Sources */,
+				EE35385F136E829700F0F46B /* RegexKitLite.m in Sources */,
+				EE353867136E83B600F0F46B /* NSString+Conversions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
